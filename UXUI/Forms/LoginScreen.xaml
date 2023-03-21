@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="UXUI.LoginScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UXUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    NavigationCacheMode="Required"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="Wheat">
+
+        <TextBox x:Name="UserNameInput" HorizontalAlignment="Left" Margin="383,480,0,0" TextWrapping="Wrap" PlaceholderText="Username" FontSize="30px" VerticalAlignment="Top" Height="47" Width="220"/>
+        <PasswordBox x:Name="PasswordInput"  PlaceholderText="Password" FontSize="30px" PasswordChar="*" HorizontalAlignment="Left" Margin="383,548,0,0" VerticalAlignment="Top" Width="220" Height="47"/>
+        <TextBlock HorizontalAlignment="Left" Margin="120,480,0,0" TextWrapping="Wrap" Text="UserName:" FontSize="40px" VerticalAlignment="Top" FontWeight="Normal" FontFamily="Bookman Old Style"/>
+        <TextBlock HorizontalAlignment="Left" Margin="120,548,0,0" TextWrapping="Wrap" Text="Password:" FontSize="40px" VerticalAlignment="Top" Width="246" FontFamily="Bookman Old Style"/>
+        <TextBlock HorizontalAlignment="Left" Margin="207,237,0,0" TextWrapping="Wrap" Text="UserLogin" FontSize="60px" VerticalAlignment="Top" Width="381" FontFamily="Cambria Math" FontWeight="Bold"/>
+        <Rectangle Stroke="Black" Margin="658,0,0,0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/PICS/LibraryPhoto.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="btnLogin" CornerRadius="10" FontSize="30px" FontWeight="Bold" Content="Login" Margin="383,687,0,0" VerticalAlignment="Top" Width="151" Height="69" Background="#3300FF61" Click="btnLogin_Click"/>
+        <Button x:Name="ClearButton" CornerRadius="10" FontSize="20px" FontWeight="Bold" Content="Clear" Margin="302,815,0,0" VerticalAlignment="Top" Background="#FFE03535" Width="84" Height="49" Click="ClearButton_Click"/>
+        <Button x:Name="CloseButton" FontSize="20px" FontWeight="Bold" CornerRadius="20" Content="X" Margin="10,10,0,0" VerticalAlignment="Top" Width="44" Height="41" RenderTransformOrigin="2.626,1.681" Click="CloseButton_Click"/>
+        <Button Content="Sign Up" Margin="167,687,0,0" VerticalAlignment="Top" FontSize="30" Background="#3300FF61" FontWeight="Bold" CornerRadius="5" Height="69" Width="151" Click="Button_Click"/>
+    </Grid>
+</Page>
